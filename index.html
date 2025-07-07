@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dreisatz</title>
+  
+</head>
+<body style="background-color: #B9D1EA; margin-top: 1em; ">
+       
+
+    <style> 
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
+        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+        .Aufgabe { font-size: 0.8em;  font-family: Verdana,Sans-serif;margin:0.5em;}
+        button {background-color:white; font-family: Verdana, Sans-serif; }
+        input {background-color:yellow; }
+    </style>
+    
+	
+    <p class="Text1">Wie löse ich Matheaufgaben?</p>
+		<p class="Text1">Proportionale und antiproportionale <br> Zuordnungen (Dreisatz)</p>
+    <p class="Text2" > <span style= "background-color:white;">Sie sehen eine gelbes Eingabefeld oder <br>den Schalter: Lösung.</span></p>
+  	<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
+  
+<!--//Aufgabe 1-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 1</p>
+  <p class = "Aufgabe" ><strong>Für 60 Tage Aushilfsarbeit bekommt ein Schüler 546 €. <br> Wie viel bekommt er für 76 Tage? </strong><br> 
+    Ihr Ergebnis: <input type="text" id="Eintrag1" maxlength="6" size="2" style= background-color:yellow > €</input> &nbsp; 
+      <button id="Pruef1" onclick="Aufgabe1()">Prüfen</button>&nbsp;
+  
+  
+                     <script>
+                        function Aufgabe1() { 
+                                                
+                          if (Eintrag1.value=="691,60") {alert("Richtig"); document.getElementById("Pruef1").disabled= true;
+                          }  
+                           
+                          else if (Eintrag1.value!=="691,60" && Eintrag1.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag1").value="691,60"; window.open('Dreisatz_Aufgabe1.html')           
+                          document.getElementById("Pruef1").disabled= true;}
+                               
+                          else if (Eintrag1.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+<!--//Aufgabe 2-->
+
+  <p class="Aufgabe" style="font-weight:bold" >Aufgabe 2</p>
+  <p class="Aufgabe" style="font-weight:bold">Für Waren im Wert von 16 000 € muss der Empfänger 3 200 € Zoll bezahlen. <br>Wie viel Zoll kosten Waren von 7 000 €? &nbsp; &nbsp; 
+  <button  onclick="window.open('Dreisatz_Aufgabe2.html');" >Lösung</button></p>
+
+<!--//Aufgabe 3--> 
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 3</p>
+  <p class = "Aufgabe" ><strong>Ein Fuhrpark besteht aus 13 Fahrzeugen, die monatlich 6 175 l Benzin verbrauchen.<br>    
+Wie hoch ist der monatliche Verbrauch in l, wenn 2 Fahrzeuge dazu kommen? </strong> <br>
+Ihr Ergebnis: <input type="text" id="Eintrag3" maxlength="4" size="2" style= background-color:yellow > l</input> &nbsp; 
+      <button id="Pruef3" onclick="Aufgabe3()">Prüfen</button>&nbsp;
+    
+                     <script>c
+                        function Aufgabe3() { 
+                                                
+                          if (Eintrag3.value=="7125") {alert("Richtig"); document.getElementById("Pruef3").disabled= true;
+                          }  
+                           
+                          else if (Eintrag3.value!=="7125" && Eintrag3.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag3").value="7125";window.open('Dreisatz_Aufgabe3.html')            
+                          document.getElementById("Pruef3").disabled= true;}
+                               
+                          else if (Eintrag3.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+
+   <!--//Aufgabe 4-->
+
+  <p class="Aufgabe" style="font-weight:bold" >Aufgabe 4</p>
+  <p class="Aufgabe" style="font-weight:bold">28 Ordner kosten 156,80 €. <br>Wie viel kosten 34 Ordner?  &nbsp; &nbsp; 
+  <button  onclick="window.open('Dreisatz_Aufgabe4.html');" >Lösung</button></p>
+
+      <!--//Aufgabe 5--> 
+
+      <p class ="Aufgabe" style="font-weight:bold">Aufgabe 5</p>
+  <p class = "Aufgabe" ><strong>Ein Großhändler bezieht 805 kg einer Ware für insgesamt 4 830 €. <br>Wie viel kosten 245 kg?  </strong><br> 
+    Ihr Ergebnis: <input type="text" id="Eintrag5" maxlength="4" size="1" style= background-color:yellow ></input> €
+     <button id="Pruef5" onclick="Aufgabe5()">Prüfen</button>
+       
+     <script>
+                        function Aufgabe5() { 
+                                                
+                          if (Eintrag5.value=="1470") {alert("Richtig"); document.getElementById("Pruef5").disabled= true;
+                          }  
+                           
+                          else if (Eintrag5.value!=="1470" && Eintrag5.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag5").value="1470";window.open('Dreisatz_Aufgabe5.html');            
+                          document.getElementById("Pruef5").disabled= true;}
+                               
+                          else if (Eintrag5.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+
+    <!--//Aufgabe 6-->
+
+  <p class="Aufgabe" style="font-weight:bold" >Aufgabe 6</p>
+  <p class="Aufgabe" style="font-weight:bold">Ein Vertreter erhält bei einem Umsatz von 109 200 € eine Prämie von 1 146,60 €.<br>   
+Wie hoch ist seine Prämie, wenn er den Umsatz um 8 400 € steigert?
+ &nbsp; &nbsp; <button  onclick="window.open('Dreisatz_Aufgabe6.html');" >Lösung</button></p>
+                    
+<!--//Aufgabe 7--> 
+
+  <p class ="Aufgabe" style="font-weight:bold">Aufgabe 7</p>
+  <p class = "Aufgabe" ><strong>Für das Eindecken eines Daches von 408 m² braucht ein Dachdecker 10 200 Platten.<br> 
+Wie viele Platten benötigt er für ein 381 m² großes Dach? </strong><br>
+Ihr Ergebnis:  <input type="text" id="Eintrag7" maxlength="2" size="1" style= background-color:yellow ></input> &nbsp; 
+    <button id="Pruef7" onclick="Aufgabe7()">Prüfen</button>&nbsp;
+    
+
+                    <script>
+                        function Aufgabe7() { 
+                                                
+                          if (Eintrag7.value=="12") {alert("Richtig"); document.getElementById("Pruef7").disabled= true;
+                          }  
+                           
+                          else if (Eintrag7.value!=="12" && Eintrag7.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag7").value="12";window.open('Dreisatz_Aufgabe7.html');            
+                          document.getElementById("Pruef7").disabled= true;}
+                               
+                          else if (Eintrag7.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+<!--//Aufgabe 8-->   
+             
+      <p class="Aufgabe" style="font-weight:bold" >Aufgabe 8</p>
+      <p class="Aufgabe" style="font-weight:bold">Einen Auftrag sollen 24 Arbeiter in 9 Arbeitstagen erledigen. <br>Wegen Krankheit fallen 6 Arbeiter aus.<br>   
+In wie viel Tagen ist der Auftrag jetzt erledigt?&nbsp; &nbsp; &nbsp; 
+      <button  onclick="window.open('Dreisatz_Aufgabe8.html');" >Lösung</button></p>
+
+
+ <!--//Aufgabe 9--> 
+
+ <p class ="Aufgabe" style="font-weight:bold">Aufgabe 9</p>
+  <p class = "Aufgabe" ><strong>Aus 50 kg Rohkaffee erhält man 43,3 kg Röstkaffee.<br>
+Wie hoch ist der Röstverlust bei einer Tagesproduktion von 22 650 kg Röstkaffee?
+</strong><br>
+Ihr Ergebnis: <input type="text" id="Eintrag9" maxlength="8" size="3" style= background-color:yellow > kg</input>
+    <button id="Pruef9" onclick="Aufgabe9()">Prüfen</button>
+  <p class = "Aufgabe" ><strong>Tragen Sie das Ergebnis auf 3 Stellen nach dem Komma gerundet ein.<br>
+Runden Sie auch Zwischenergebnisse auf 3 Stellen nach dem Komma.</strong></p>
+
+                    <script>
+                        function Aufgabe9() { 
+                                                
+                          if (Eintrag9.value=="3504,7") {alert("Richtig"); document.getElementById("Pruef9").disabled= true;
+                          }  
+                           
+                          else if (Eintrag9.value!=="3504,7" && Eintrag9.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag9").value="3504,7";window.open('Dreisatz_Aufgabe9.html');            
+                          document.getElementById("Pruef9").disabled= true;}
+                               
+                          else if (Eintrag9.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+        <!--//Aufgabe 10-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 10</p>
+        <p class="Aufgabe" style="font-weight:bold">Für einen Ballen Kleiderstoff von 32,4 m Länge zahlt ein Betrieb 436,80 €.<br>  
+Wie viel kostet ein 2,15 m langer Stoffballen?   &nbsp; &nbsp; &nbsp;  
+        <button  onclick="window.open('Dreisatz_Aufgabe10.html');" >Lösung</button></p>
+
+        <!--//Aufgabe 11-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 11</p>
+  <p class = "Aufgabe" ><strong>Ein Betrieb vermietet Rasenmäher. Zwei Tage kosten 15 €.<br>Wie viel kosten 3 Tage?   </strong><br>
+    Ihr Ergebnis: <input type="text" id="Eintrag11" maxlength="5" size="2" style= background-color:yellow > €</input>
+    <button id="Pruef11" onclick="Aufgabe11()">Prüfen</button>
+  
+                    <script>
+                        function Aufgabe11() { 
+                                                
+                          if (Eintrag11.value=="22,50") {alert("Richtig"); document.getElementById("Pruef11").disabled= true;
+                          }  
+                           
+                          else if (Eintrag11.value!=="22,50" && Eintrag11.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag11").value=" 22,50";window.open('Dreisatz_Aufgabe10.html');            
+                          document.getElementById("Pruef11").disabled= true;}                               
+                          else if (Eintrag11.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+   <!--//Aufgabe 12-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 12</p>
+        <p class="Aufgabe" style="font-weight:bold">Ein Betrieb muss für 38 421 kWh 5763,15 € bezahlen. <br>Wie hoch ist der Kostenanteil des Materiallagers, <br>  
+wenn der alte Zählerstand 6 937 kWh, der neue 9 023 kWh beträgt?<br>   
+        <button  onclick="window.open('Dreisatz_Aufgabe12.html');" >Lösung</button></p>
+
+   <!--//Aufgabe 13-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 13</p>
+  <p class = "Aufgabe" ><strong>Drei Angestellte machen monatlich 4 320 Stichproben.<br>                           
+Wie viele Angestellte braucht man für 17 280 Stichproben pro Monat? </strong><br>
+    Ihr Ergebnis: <input type="text" id="Eintrag13" maxlength="2" size="1" style= background-color:yellow > </input>
+    <button id="Pruef13" onclick="Aufgabe13()">Prüfen</button>
+  
+                    <script>
+                        function Aufgabe13() { 
+                                                
+                          if (Eintrag13.value=="12") {alert("Richtig"); document.getElementById("Pruef13").disabled= true;
+                          }  
+                           
+                          else if (Eintrag13.value!=="12" && Eintrag13.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag13").value="12"; window.open('Dreisatz_Aufgabe13.html');           
+                          document.getElementById("Pruef13").disabled= true;}                               
+                          else if (Eintrag13.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+  <!--//Aufgabe 14-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 14</p>
+        <p class="Aufgabe" style="font-weight:bold">Die Frachtkosten für eine Ladung von 855 t betragen 63 270 €.<br>
+Wie hoch sind die Kosten für eine Ladung von 210 t?&nbsp; &nbsp;  
+        <button  onclick="window.open('Dreisatz_Aufgabe14.html');" >Lösung</button></p>
+        
+  <!--//Aufgabe 15-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 15</p>
+  <p class = "Aufgabe" ><strong>14 Abfüllautomaten befüllen 2 100 Flaschen pro Tag. <br>               
+Wie viele Automaten braucht man für 3 000 Flaschen pro Tag? </strong><br>
+    Ihr Ergebnis: <input type="text" id="Eintrag15" maxlength="2" size="1" style= background-color:yellow ></input>
+    <button id="Pruef15" onclick="Aufgabe15()">Prüfen</button>
+  
+
+                    <script>
+                        function Aufgabe15() { 
+                                                
+                          if (Eintrag15.value=="20") {alert("Richtig"); document.getElementById("Pruef15").disabled= true;
+                          }  
+                           
+                          else if (Eintrag15.value!=="20" && Eintrag15.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag15").value="20"; window.open('Dreisatz_Aufgabe15.html');           
+                          document.getElementById("Pruef15").disabled= true;}                               
+                          else if (Eintrag15.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>      
+                    
+  <!--//Aufgabe 16-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 16</p>
+        <p class="Aufgabe" style="font-weight:bold">Ein Schiff braucht bei einer Geschwindigkeit von 17 Knoten für eine Fahrt 10¾ Tage.<br>
+Wie lange braucht es bei einer Geschwindigkeit von 20 Knoten?&nbsp; &nbsp;  
+        <button  onclick="window.open('Dreisatz_Aufgabe16.html');" >Lösung</button></p>
+                         
+<!--//Aufgabe 17-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 17</p>
+  <p class = "Aufgabe" ><strong>Um eine Schiffsladung Holz abzufahren, müssen 6 Lkw jeweils 16 mal täglich fahren.<br>  
+Wegen Bauarbeiten können sie nur zwölfmal pro Tag fahren.<br> 
+Wie viele Lkw braucht man zusätzlich, um den Termin einzuhalten?</strong><br>
+    Ihr Ergebnis: <input type="text" id="Eintrag17" maxlength="1" size="1" style= background-color:yellow ></input>
+    <button id="Pruef17" onclick="Aufgabe17()">Prüfen</button>
+  
+                    <script>
+                        function Aufgabe17() { 
+                                                
+                          if (Eintrag17.value=="2") {alert("Richtig"); document.getElementById("Pruef17").disabled= true;
+                          }  
+                           
+                          else if (Eintrag17.value!=="2" && Eintrag17.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag17").value="2";window.open('Dreisatz_Aufgabe17.html');            
+                          document.getElementById("Pruef17").disabled= true;}                               
+                          else if (Eintrag17.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+    <!--//Aufgabe 18-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 18</p>
+        <p class="Aufgabe" style="font-weight:bold">Für eine Arbeit brauchen 9 Angestellte 14 Arbeitstage. <br>
+Wie lange brauchen 7 Angestellte für diese Arbeit?&nbsp; &nbsp;  
+        <button  onclick="window.open('Dreisatz_Aufgabe18.html');" >Lösung</button></p>
+                                           
+<!--//Aufgabe 19-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 19</p>
+  <p class = "Aufgabe" ><strong>Ein Vorrat reicht noch 45 Tage, wenn täglich 150 kg davon verkauft werden.<br>   
+Wie lange reicht er, wenn täglich 270 kg verkauft werden?</strong><br>
+    Ihr Ergebnis: <input type="text" id="Eintrag19" maxlength="2" size="1" style= background-color:yellow > Tage</input>
+    <button id="Pruef19" onclick="Aufgabe19()">Prüfen</button>
+  
+                    <script>
+                        function Aufgabe19() { 
+                                                
+                          if (Eintrag19.value=="25") {alert("Richtig"); document.getElementById("Pruef19").disabled= true;
+                          }  
+                           
+                          else if (Eintrag19.value!=="25" && Eintrag19.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag19").value="25"; window.open('Dreisatz_Aufgabe19.html');           
+                          document.getElementById("Pruef19").disabled= true;}                               
+                          else if (Eintrag19.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+    <!--//Aufgabe 20-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 20</p>
+        <p class="Aufgabe" style="font-weight:bold">Während einer Inventur nehmen 7 Verkäufer in 8 Stunden 600 Artikel auf. <br>
+Wie lange benötigen 9 Verkäufer für 6 300 Artikel?&nbsp; &nbsp;  
+        <button  onclick="window.open('Dreisatz_Aufgabe20.html');">Lösung</button></p>
+                                            
+<!--//Aufgabe 21-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 21</p>
+  <p class = "Aufgabe" ><strong>Für einen Pudding für 4 Personen braucht man 0,5 l Milch. <br>       
+Wie viel Liter braucht man für einen Pudding für 10 Personen?</strong><br>
+    Ihr Ergebnis: <input type="text" id="Eintrag21" maxlength="4" size="1" style= background-color:yellow > l</input>
+    <button id="Pruef21" onclick="Aufgabe21()">Prüfen</button>
+  
+                    <script>
+                        function Aufgabe21() { 
+                                                
+                          if (Eintrag21.value=="1,25") {alert("Richtig"); document.getElementById("Pruef21").disabled= true;
+                          }  
+                           
+                          else if (Eintrag21.value!=="1,25" && Eintrag21.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag21").value="1,25";window.open('Dreisatz_Aufgabe21.html');            
+                          document.getElementById("Pruef21").disabled= true;}                               
+                          else if (Eintrag21.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+    <!--//Aufgabe 22-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 22</p>
+        <p class="Aufgabe" style="font-weight:bold">300 l Öl reichen für 20 Lampen, die an 25 Tagen jeweils 6 Stunden brennen.<br>       
+Wie viel Öl benötigen 18 Lampen, die an 30 Tagen jeweils 5 Stunden brennen?<br>   
+        <button  onclick="window.open('Dreisatz_Aufgabe22.html');" >Lösung</button></p>
+                    
+<!--//Aufgabe 23-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 23</p>
+  <p class = "Aufgabe" ><strong>25 Arbeiter stellen in 32 Tagen bei täglich 7 Stunden ein Sportfeld von 8 000 m² fertig.<br> 
+In wie vielen Tagen zu 8 Stunden schaffen 20 Arbeiter ein 12 000 m² Feld?</strong><br>
+    Ihr Ergebnis: <input type="text" id="Eintrag23" maxlength="2" size="1" style= background-color:yellow > Tage</input>
+    <button id="Pruef23" onclick="Aufgabe23()">Prüfen</button>
+  
+                    <script>
+                        function Aufgabe23() { 
+                                                
+                          if (Eintrag23.value=="12") {alert("Richtig"); document.getElementById("Pruef23").disabled= true;
+                          }  
+                           
+                          else if (Eintrag23.value!=="12" && Eintrag23.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag23").value="12";window.open('Dreisatz_Aufgabe23.html');            
+                          document.getElementById("Pruef23").disabled= true;}                               
+                          else if (Eintrag23.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+   <!--//Aufgabe 24-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 24</p>
+        <p class="Aufgabe" style="font-weight:bold">Ein Geschäft verkauft in 30 Tagen 690 kg Ware. <br>Wie lange reichen 207 kg?   &nbsp; &nbsp;  
+        <button  onclick="window.open('Dreisatz_Aufgabe24.html');" >Lösung</button></p>
+
+  <!--//Aufgabe 25-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 25</p>
+  <p class = "Aufgabe" ><strong>Ein Computer 'korrigiert' 26 Prüfungsarbeiten mit je 15 Aufgaben in 22½ Minuten.<br>   
+Wie lange benötigt er für 120 Arbeiten mit je 24 Fragen?</strong><br>
+    Ihr Ergebnis: <input type="text" id="Eintrag25" maxlength="6" size="2" style= background-color:yellow > min</input>
+    <button id="Pruef25" onclick="Aufgabe25()">Prüfen</button>
+  
+
+                    <script>
+                        function Aufgabe25() { 
+                                                
+                          if (Eintrag25.value=="166,08") {alert("Richtig"); document.getElementById("Pruef25").disabled= true;
+                          }  
+                           
+                          else if (Eintrag25.value!=="166,08" && Eintrag25.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag25").value="166,08"; window.open('Dreisatz_Aufgabe25.html');           
+                          document.getElementById("Pruef25").disabled= true;}                               
+                          else if (Eintrag25.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+    <!--//Aufgabe 26-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 26</p>
+        <p class="Aufgabe" style="font-weight:bold">Eine Baumaßnahme dauert 4 Tage, wenn 6 Arbeiter täglich 8 Stunden arbeiten.<br>
+Wie lange brauchen 8 Arbeiter bei 9 stündiger Arbeitszeit für diese Arbeit? <br>    
+        <button  onclick="window.open('Dreisatz_Aufgabe26.html');" >Lösung</button></p>
+
+    <!--//Aufgabe 27-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 27</p>
+  <p class = "Aufgabe" ><strong>Die Bahnfracht für eine Sendung im Gesamtgewicht von 2 630 kg kostet 360 €. <br>   
+Wie hoch sind die Kosten für 452 kg?</strong><br>
+    Ihr Ergebnis: <input type="text" id="Eintrag27" maxlength="5" size="2" style= background-color:yellow > €</input>
+    <button id="Pruef27" onclick="Aufgabe27()">Prüfen</button>
+  
+
+                    <script>
+                        function Aufgabe27() {                                                
+                          if (Eintrag27.value=="61,79") {alert("Richtig"); document.getElementById("Pruef27").disabled= true;
+                          }  
+                           
+                          else if (Eintrag27.value!=="61,79" && Eintrag27.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag27").value="61,79";window.open('Dreisatz_Aufgabe27.html');            
+                          document.getElementById("Pruef27").disabled= true;}                               
+                          else if (Eintrag27.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+     <!--//Aufgabe 28-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 28</p>
+        <p class="Aufgabe" style="font-weight:bold">In einem Laden arbeiten 10 Angestellte 8 Stunden täglich, <br>um die Inventur in 
+10 Tagen zu erledigen. <br>Nach 3 Tagen erkranken 3 Arbeitskräfte. <br>
+Wie lange dauert die Inventur noch, <br>wenn die restlichen Angestellten täglich 2 Überstunden machen? <br>      
+        <button  onclick="window.open('Dreisatz_Aufgabe28.html');"  >Lösung</button></p>
+
+    <!--//Aufgabe 29-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 29</p>
+  <p class = "Aufgabe" ><strong>Ein 168-m³-Tank wird durch zwei Zuleitungen gefüllt, die 180 und 240 Liter je Minute liefern. <br>  
+Wie lange dauert das Füllen, wenn beide Leitungen in Betrieb sind?</strong> <br>
+    Ihr Ergebnis: <input type="text" id="Eintrag29" maxlength="3" size="1" style= background-color:yellow > min</input>
+    <button id="Pruef29" onclick="Aufgabe29()">Prüfen</button>
+  
+
+                    <script>
+                        function Aufgabe29() {                                                
+                          if (Eintrag29.value=="400") {alert("Richtig"); document.getElementById("Pruef29").disabled= true;
+                          }  
+                           
+                          else if (Eintrag29.value!=="400" && Eintrag29.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag29").value="400";window.open('Dreisatz_Aufgabe29.html');            
+                          document.getElementById("Pruef29").disabled= true;}                               
+                          else if (Eintrag29.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+     <!--//Aufgabe 30-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 30</p>
+        <p class="Aufgabe" style="font-weight:bold">3 Arbeiter entladen in 5 Stunden 15 t Zement. In wie <br>viel Stunden  entladen 7 Arbeiter 21 t?      
+        <button  onclick="window.open('Dreisatz_Aufgabe30.html');" >Lösung</button></p>
+
+      <!--//Aufgabe 31-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 31</p>
+  <p class = "Aufgabe" ><strong>Ein Auto braucht für eine Strecke 6 Stunden, wenn es mit 45 km/h fährt.  <br>                                
+In wie viel Stunden wird die Strecke bei einer Geschwindigkeit von 80 km/h zurückgelegt?</strong> <br>
+    Ihr Ergebnis: <input type="text" id="Eintrag31" maxlength="5" size="2" style= background-color:yellow > h</input>
+    <button id="Pruef31" onclick="Aufgabe31()">Prüfen</button>
+  
+
+                    <script>
+                        function Aufgabe31() {                                                
+                          if (Eintrag31.value=="3,375") {alert("Richtig"); document.getElementById("Pruef31").disabled= true;
+                          }  
+                           
+                          else if (Eintrag31.value!=="3,375" && Eintrag31.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag31").value="3,375"; window.open('Dreisatz_Aufgabe31.html');           
+                          document.getElementById("Pruef31").disabled= true;}                               
+                          else if (Eintrag31.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+          <!--//Aufgabe 32-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 32</p>
+        <p class="Aufgabe" style="font-weight:bold">Zwei Bagger heben einen Graben in 48 Stunden aus. <br>Wie viel Stunden benötigen fünf Bagger? 
+        <button  onclick="window.open('Dreisatz_Aufgabe32.html');" >Lösung</button></p>
+
+  <!--//Aufgabe 33-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 33</p>
+  <p class = "Aufgabe" ><strong>Der Lebensmittelvorrat einer Raumstation reicht für 3 Besatzungsmitglieder 32 Tage. <br>  
+Wie viel Tage reicht dieser Vorrat für 4 Besatzungsmitglieder?</strong> <br>
+    Ihr Ergebnis: <input type="text" id="Eintrag33" maxlength="2" size="1" style= background-color:yellow > Tage</input>
+    <button id="Pruef33" onclick="Aufgabe33()">Prüfen</button>
+  
+
+                    <script>
+                        function Aufgabe33() {                                                
+                          if (Eintrag33.value=="24") {alert("Richtig"); document.getElementById("Pruef33").disabled= true;
+                          }  
+                           
+                          else if (Eintrag33.value!=="24" && Eintrag33.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag33").value="24";window.open('Dreisatz_Aufgabe33.html');            
+                          document.getElementById("Pruef33").disabled= true;}                               
+                          else if (Eintrag33.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+      <!--//Aufgabe 34-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 34</p>
+        <p class="Aufgabe" style="font-weight:bold">Ein Schüler teilt jede Woche 390 Prospekte aus und bekommt dafür 28,08 €. <br>
+a) Ein anderer verteilt für dieselbe Firma in einem anderen Stadtteil 360 Prospekte.<br> 
+Wie viel verdient er?<br>
+b) Ein weiterer verdient 18 € in der Woche. Wie viele Prospekte trägt er aus?<br>     
+        <button  onclick="window.open('Dreisatz_Aufgabe34.html');" >Lösung</button></p>
+
+<!--//Aufgabe 35-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 35</p>
+  <p class = "Aufgabe" ><strong>Tee wird in 60 Tüten zu je 50 g verpackt. <br>                                                
+Wie viel Tüten zu je 125 g erhält man aus der gleichen Teemenge?</strong> <br>
+    Ihr Ergebnis: <input type="text" id="Eintrag35" maxlength="2" size="1" style= background-color:yellow > </input>
+    <button id="Pruef35" onclick="Aufgabe35()">Prüfen</button>
+  
+                    <script>
+                        function Aufgabe35() {                                                
+                          if (Eintrag35.value=="24") {alert("Richtig"); document.getElementById("Pruef35").disabled= true;
+                          }  
+                           
+                          else if (Eintrag35.value!=="24" && Eintrag35.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag35").value="24";window.open('Dreisatz_Aufgabe35.html');            
+                          document.getElementById("Pruef35").disabled= true;}                               
+                          else if (Eintrag35.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+     <!--//Aufgabe 36-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 36</p>
+        <p class="Aufgabe" style="font-weight:bold">Einen Wald können 15 Forstarbeiter in 24 Arbeitsstunden roden.<br> 
+Wie viel Stunden dauert die Arbeit, wenn nur 11 Arbeiter zur Verfügung stehen? <br>  
+        <button  onclick="window.open('Dreisatz_Aufgabe36.html');" >Lösung</button></p>
+
+    <!--//Aufgabe 37-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 37</p>
+  <p class = "Aufgabe" ><strong>Eine Kiste mit 168 Weingläsern kostet 403,20 Euro. <br>Wie viel kosten drei Dutzend Weingläser?   </strong> <br>
+    Ihr Ergebnis: <input type="text" id="Eintrag37" maxlength="5" size="2" style= background-color:yellow > €</input>
+    <button id="Pruef37" onclick="Aufgabe37()">Prüfen</button>
+  
+                    <script>
+                        function Aufgabe37() {                                                
+                          if (Eintrag37.value=="86,40") {alert("Richtig"); document.getElementById("Pruef37").disabled= true;
+                        } 
+                          else if (Eintrag37.value!=="86,40" && Eintrag37.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag37").value="86,40"; window.open('Dreisatz_Aufgabe37.html');
+                                       
+                          document.getElementById("Pruef37").disabled= true;}                               
+                          else if (Eintrag37.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+      <!--//Aufgabe 38-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 38</p>
+        <p class="Aufgabe" style="font-weight:bold">Eine Treppenhausbeleuchtung mit 8 Glühlampen zu je 40 Watt verursacht<br> 
+monatlich Stromkosten in Höhe von 2,36 Euro. <br>
+Wie hoch sind die Kosten, wenn 10 Glühlampen zu je 60 Watt installiert werden? <br>    
+        <button  onclick="window.open('Dreisatz_Aufgabe38.html');" >Lösung</button></p>
+
+    <!--//Aufgabe 39-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 39</p>
+  <p class = "Aufgabe" ><strong>2 Pumpen füllen in 6,5 Stunden den 1300 t fassenden Tank eines Schiffes. <br>
+In wie viel Stunden füllen 3 Pumpen einen 2100 t fassenden Tank? </strong> <br>
+    Ihr Ergebnis: <input type="text" id="Eintrag39" maxlength="1" size="1" style= background-color:yellow > h</input>
+    <button id="Pruef39" onclick="Aufgabe39()">Prüfen</button>
+  
+
+                    <script>
+                        function Aufgabe39() {                                                
+                          if (Eintrag39.value=="7") {alert("Richtig"); document.getElementById("Pruef39").disabled= true;
+                          }  
+                           
+                          else if (Eintrag39.value!=="7" && Eintrag39.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag39").value="7"; window.open('Dreisatz_Aufgabe39.html');           
+                          document.getElementById("Pruef39").disabled= true;}                               
+                          else if (Eintrag39.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+      <!--//Aufgabe 40-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 40</p>
+        <p class="Aufgabe" style="font-weight:bold">24 Arbeiter bauen in 30 Arbeitstagen 120 Maschinen zusammen.<br> 
+Wie viele Arbeiter braucht man, um 100 Maschinen in 40 Arbeitstagen zusammenzubauen?<br>     
+        <button  onclick="window.open('Dreisatz_Aufgabe40.html');" >Lösung</button></p>
+
+      <!--//Aufgabe 41-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 41</p>
+  <p class = "Aufgabe" ><strong>3 Gesellen streichen in 22 Stunden eine Wand von 264 m². <br>
+Wie viel Stunden brauchen sie für 816 m² , wenn noch ein Kollege dazukommt und hilft? </strong> <br>
+    Ihr Ergebnis: <input type="text" id="Eintrag41" maxlength="2" size="1" style= background-color:yellow > h</input>
+    <button id="Pruef41" onclick="Aufgabe41()">Prüfen</button>
+  
+
+                    <script>
+                        function Aufgabe41() {                                                
+                          if (Eintrag41.value=="51") {alert("Richtig"); document.getElementById("Pruef41").disabled= true;
+                          }  
+                           
+                          else if (Eintrag41.value!=="51" && Eintrag41.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag41").value="51"; window.open('Dreisatz_Aufgabe41.html');           
+                          document.getElementById("Pruef41").disabled= true;}                               
+                          else if (Eintrag41.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+      <!--//Aufgabe 42-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 42</p>
+        <p class="Aufgabe" style="font-weight:bold">6 Männer wollen eine Arbeit in 15 Stunden ausführen.<br> 
+Kurz vor Beginn der Arbeit wird einer von ihnen krank.<br> 
+Wie viele Stunden benötigen nun die übrigen für die Arbeit?<br>    
+        <button  onclick="window.open('Dreisatz_Aufgabe42.html');" >Lösung</button></p>
+
+      <!--//Aufgabe 43-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 43</p>
+  <p class = "Aufgabe" ><strong>Ein Kindererholungsheim ist für 180 Kinder eingerichtet und 
+für 20 Tage mit Lebensmitteln versorgt. <br>
+Wie viel Tage reicht der Vorrat, wenn 30 Plätze frei bleiben?    </strong> <br>
+    Ihr Ergebnis: <input type="text" id="Eintrag43" maxlength="2" size="1" style= background-color:yellow > Tage</input>
+    <button id="Pruef43" onclick="Aufgabe43()">Prüfen</button>
+  
+                    <script>
+                        function Aufgabe43() {                                                
+                          if (Eintrag43.value=="24") {alert("Richtig"); document.getElementById("Pruef43").disabled= true;
+                          }  
+                           
+                          else if (Eintrag43.value!=="24" && Eintrag43.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag43").value="24";window.open('Dreisatz_Aufgabe43.html');            
+                          document.getElementById("Pruef43").disabled= true;}                               
+                          else if (Eintrag43.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+     <!--//Aufgabe 44-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 44</p>
+        <p class="Aufgabe" style="font-weight:bold">5 Archäologen benötigen bei einer Exkursion für 4 Tage 100 Liter Wasser.<br> 
+Wie viel Liter müssen 8 Archäologen für 10 Tage mitnehmen?                   <br> 
+        <button  onclick="window.open('Dreisatz_Aufgabe44.html');" >Lösung</button></p>
+
+    <!--//Aufgabe 45-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 45</p>
+  <p class = "Aufgabe" ><strong>25 kg Kartoffeln reichen für eine Familie mit 3 Personen 50 Tage lang.<br> 
+  a) Wie viele kg Kartoffeln muss sie für 270 Tage einkaufen, <br>wenn eine Person hinzugekommen ist?<br></strong>
+Ihr Ergebnis: <input type="text" id="Eintrag45" maxlength="3" size="1" style= background-color:yellow > kg</input> <button id="Pruef45" onclick="Aufgabe45()">Prüfen</button><br>
+    <strong>b) Wie viel Tage wird sie mit 40 kg auskommen, <br>wenn eine Person hinzugekommen ist? 
+  </strong> </p>
+
+    
+                    <script>
+                        function Aufgabe45() {                                                
+                          if (Eintrag45.value=="180") {alert("Richtig"); document.getElementById("Pruef45").disabled= true;
+                          }  
+                           
+                          else if (Eintrag45.value!=="180" && Eintrag45.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag45").value="180";window.open('Dreisatz_Aufgabe45.html');            
+                          document.getElementById("Pruef45").disabled= true;}                               
+                          else if (Eintrag45.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+    <!--//Aufgabe 46-->   
+             
+        <p class="Aufgabe" style="font-weight:bold" >Aufgabe 46</p>
+        <p class="Aufgabe" style="font-weight:bold">2 Wasserpumpen fördern in 24 Stunden 4800 Liter Wasser. <br>
+Wie viel Liter fördern 5 Pumpen in 10 Stunden?                           
+        <button  onclick="window.open('Dreisatz_Aufgabe46.html');" >Lösung</button></p>
+
+   <!--//Aufgabe 47-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 47</p>
+  <p class = "Aufgabe" ><strong>6 Maschinen reinigen 2400 Flaschen in 5 Stunden.<br> 
+Wie viele Flaschen reinigen 8 Maschinen in 6 Stunden?  <br></strong>
+Ihr Ergebnis: <input type="text" id="Eintrag47" maxlength="4" size="1" style= background-color:yellow > kg</input>
+    <button id="Pruef47" onclick="Aufgabe47()">Prüfen</button><br>
+  
+    
+                    <script>
+                        function Aufgabe47() {                                                
+                          if (Eintrag47.value=="3840") {alert("Richtig"); document.getElementById("Pruef47").disabled= true;
+                          }  
+                           
+                          else if (Eintrag47.value!=="3840" && Eintrag47.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag47").value="3840"; window.open('Dreisatz_Aufgabe47.html');           
+                          document.getElementById("Pruef47").disabled= true;}                               
+                          else if (Eintrag47.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>     
+                 
+           <button type = "button" onclick="window.open('https://www.matheaufgaben-loesen.de/html/dreisatz.html'); window.close('index.html');">zurück...</button>
+          
+          <script>
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          </script>
+
+</body>
+
