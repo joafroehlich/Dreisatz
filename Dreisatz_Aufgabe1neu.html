@@ -23,38 +23,14 @@ td.op { color: #666; text-align: left; white-space: nowrap; }
 </head>
 <body>
 <main>
-<h1>Dreisatz Aufgabe 1</h1>
-<p>Für 60 Tage Aushilfsarbeit bekommt ein Schüler 546 €. Wie viel € bekommt er für 76 Tage?</p>
-
-<div class="check">
-
-<input type="text" id="Eintrag1" maxlength="6"  style= background-color:yellow > €</input>  <button id="Pruef1" onclick="Aufgabe1()">Prüfen</button></p>
-  
-  
-                     <script>
-                        function Aufgabe1() { 
-                                                
-                          if (Eintrag1.value=="691,60") {alert("Richtig"); document.getElementById("Pruef1").disabled= true;
-                          }  
-                           
-                          else if (Eintrag1.value!=="691,60" && Eintrag1.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag1").value="691,60"; window.open('Dreisatz_Aufgabe1.html')           
-                          document.getElementById("Pruef1").disabled= true;}
-                               
-                          else if (Eintrag1.value=="") {alert("Bitte eine Eingabe machen")}}
-                         
-                      </script>
-</div>
-<details>
-<summary>Lösungsweg anzeigen</summary>
-
 <h2>Behauptungssatz</h2>
 <p>Für 60 Tage Aushilfsarbeit bekommt ein Schüler 546 €.</p>
 
 <h2>Schluss auf die Einheit</h2>
-<p>Für 1 Tag: 546 € : 60 = 9,10 €</p>
+<p>Für 1 Tag bekommt er: 546 € : 60 = 9,10 €</p>
 
 <h2>Gesuchte Größe</h2>
-<p>Für 76 Tage: 76 · 9,10 € = <span class="loesung">691,60 €</span></p>
+<p>Für 76 Tage bekommt er: 76 · 9,10 € = <span class="loesung">691,60 €</span></p>
 
 <h2>Andere Form der Darstellung</h2>
 <table>
@@ -64,16 +40,5 @@ td.op { color: #666; text-align: left; white-space: nowrap; }
 <tr><td class="op">· 76</td><td class="trenner">76</td><td class="loesung">546 · 76 : 60 = 691,60</td><td class="op">· 76</td></tr>
 </table>
 <p>Die Größen sind proportional, die gesuchte Größe steht rechts.</p>
-</details>
 </main>
-<script>
-function pruefen() {
-var text = document.getElementById("antwort").value.replace(/€|\s/g, "").replace(",", ".");
-var wert = parseFloat(text);
-var feld = document.getElementById("ergebnis");
-if (isNaN(wert)) { feld.textContent = "Bitte eine Zahl eingeben."; return; }
-feld.textContent = Math.abs(wert - 691.6) < 0.005 ? "Richtig! 691,60 €" : "Noch nicht richtig, versuchen Sie es noch einmal.";
-}
-</script>
 </body>
-</html>
