@@ -15,7 +15,7 @@ td, th { padding: 0.35rem 0.5rem; text-align: right; }
 th { border-bottom: 2px solid #222; }
 td.op { color: #666; text-align: left; white-space: nowrap; }
 .trenner { border-right: 2px solid #222; }
-.check { margin-top: 1.5rem; padding: 1rem; background: #f3f6fb; border-radius: 0.5rem; }
+
 .check input { font-size: 1.1rem; padding: 0.5rem; width: 8rem; }
 .check button { font-size: 1.1rem; padding: 0.5rem 1rem; min-height: 44px; }
 #ergebnis { margin-top: 0.5rem; font-weight: bold; }
@@ -27,12 +27,23 @@ td.op { color: #666; text-align: left; white-space: nowrap; }
 <p>Für 60 Tage Aushilfsarbeit bekommt ein Schüler 546 €. Wie viel € bekommt er für 76 Tage?</p>
 
 <div class="check">
-<label for="antwort">Ihre Lösung in €:</label><br>
-<input id="antwort" inputmode="decimal" autocomplete="off" placeholder="z. B. 123,45">
-<button type="button" onclick="pruefen()">Prüfen</button>
-<div id="ergebnis" aria-live="polite"></div>
-</div>
 
+<input type="text" id="Eintrag1" maxlength="6"  style= background-color:yellow > €</input>  <button id="Pruef1" onclick="Aufgabe1()">Prüfen</button></p>
+  
+  
+                     <script>
+                        function Aufgabe1() { 
+                                                
+                          if (Eintrag1.value=="691,60") {alert("Richtig"); document.getElementById("Pruef1").disabled= true;
+                          }  
+                           
+                          else if (Eintrag1.value!=="691,60" && Eintrag1.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag1").value="691,60"; window.open('Dreisatz_Aufgabe1.html')           
+                          document.getElementById("Pruef1").disabled= true;}
+                               
+                          else if (Eintrag1.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+</div>
 <details>
 <summary>Lösungsweg anzeigen</summary>
 
