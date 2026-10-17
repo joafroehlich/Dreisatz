@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dreisatz Aufgabe 1</title>
+<style>
+body { margin: 0; font-family: Verdana, sans-serif; font-size: 1.05rem; line-height: 1.5; color: #222; background: #fff; }
+main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.4rem; }
+h2 { font-size: 1.05rem; margin: 1.4rem 0 0.3rem; }
+.loesung { color: #c00; font-weight: bold; }
+table { border-collapse: collapse; margin: 0.5rem 0; font-variant-numeric: tabular-nums; }
+td, th { padding: 0.35rem 0.5rem; text-align: right; }
+th { border-bottom: 2px solid #222; }
+td.op { color: #666; text-align: left; white-space: nowrap; }
+.trenner { border-right: 2px solid #222; }
+
+.check input { font-size: 1.1rem; padding: 0.5rem; width: 8rem; }
+.check button { font-size: 1.1rem; padding: 0.5rem 1rem; min-height: 44px; }
+#ergebnis { margin-top: 0.5rem; font-weight: bold; }
+</style>
+</head>
+<body>
+<main>
+<h1>Dreisatz Aufgabe 1</h1>
+<p>Für 60 Tage Aushilfsarbeit bekommt ein Schüler 546 €. Wie viel € bekommt er für 76 Tage?</p>
+
+<div class="check">
+
+<input type="text" id="Eintrag1" maxlength="6"  style= background-color:yellow > €</input>  <button id="Pruef1" onclick="Aufgabe1()">Prüfen</button></p>
+  
+  
+                     <script>
+                        function Aufgabe1() { 
+                                                
+                          if (Eintrag1.value=="691,60") {alert("Richtig"); document.getElementById("Pruef1").disabled= true;
+                          }  
+                           
+                          else if (Eintrag1.value!=="691,60" && Eintrag1.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag1").value="691,60"; window.open('Dreisatz_Aufgabe1neu.html')           
+                          document.getElementById("Pruef1").disabled= true;document.getElementById("Loes1").style.display="inline";}
+                               
+                          else if (Eintrag1.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+<button id="Loes1" style="display:none;">Lösung</button>                      
+</div>
+
+</main>
+</body>
+</html>
