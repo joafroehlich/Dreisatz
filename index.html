@@ -45,7 +45,7 @@ h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
 
 <div class="check">
 
-<input type="text" id="Eintrag1" maxlength="6"  style= background-color:yellow > €</input>&nbsp;&nbsp;&nbsp;     <button id="Pruef1" onclick="Aufgabe1()">Prüfen</button></p>
+<input type="text" id="Eintrag1" maxlength="6"  style= background-color:yellow > €</input>&nbsp;  <button id="Pruef1" onclick="Aufgabe1()">Prüfen</button></p>
   
   
                      <script>
@@ -61,8 +61,21 @@ h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
                          
                       </script>
 
-<button id="Loes1" style="display:none;">Lösung</button>                      
+<button id="Loes1" style="display:none;">Lösung</button> 
+
 </div>
+
+<div class="check">
+
+<h2>Aufgabe 2</h2>
+<p>Für Waren im Wert von 16 000 € muss der Empfänger 
+3 200 € Zoll bezahlen. 
+Wie viel Zoll kosten Waren von 7 000 €?</p>
+<button  onclick="window.open('Dreisatz_Aufgabe2.html');" >Lösung</button></p>
+
+</div>
+
+<div class="check">
 
 </main>
 
@@ -70,11 +83,11 @@ h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
 
 Für 60 Tage Aushilfsarbeit bekommt ein Schüler 546 €. 
 Wie viel bekommt er für 76 Tage?  
-<input type="text" id="Eintrag1" maxlength="6" size="2" style= background-color:yellow > €</input>  <button id="Pruef1" onclick="Aufgabe1()">Prüfen</button></p></pre>
+<input type="text" id="Eintrag1" maxlength="6" size="2" style= background-color:yellow > €</input>  <button id="Pruef1" onclick="Aufgabe()">Prüfen</button></p></pre>
   
   
                      <script>
-                        function Aufgabe1() { 
+                        function Aufgabe() { 
                                                 
                           if (Eintrag1.value=="691,60") {alert("Richtig"); document.getElementById("Pruef1").disabled= true;
                           }  
