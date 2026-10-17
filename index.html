@@ -17,6 +17,23 @@
         .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
         button { font-family: Verdana, Sans-serif; }
         input {background-color:yellow; }
+        body { margin: 0; font-family: monospace, monospace; font-size: 1.05rem; line-height: 1.2; color: #222; background: #fff; }
+main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1rem; }
+h2 { font-size: 1.05rem; margin: 1.4rem 0 0.3rem; }
+.loesung { color: #c00; font-weight: bold; }
+table { border-collapse: collapse; margin: 0.5rem 0; font-variant-numeric: tabular-nums; }
+td, th { padding: 0.35rem 0.5rem; text-align: right; }
+th { border-bottom: 2px solid #222; }
+td.op { color: #666; text-align: left; white-space: nowrap; }
+.trenner { border-right: 2px solid #222; }
+
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 6rem; }
+.check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; min-height: 30px; }
+#ergebnis { margin-top: 0.5rem; font-weight: bold; }
+</style>
+</head>
+<body>
     </style>
     
 	
@@ -26,6 +43,33 @@
   	<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
   
 <!--//Aufgabe 1-->
+
+<main>
+<h1>Aufgabe 1</h1>
+<p>Für 60 Tage Aushilfsarbeit bekommt ein Schüler 546 €. Wie viel € bekommt er für 76 Tage?</p>
+
+<div class="check">
+
+<input type="text" id="Eintrag1" maxlength="6"  style= background-color:yellow > €</input>&nbsp;&nbsp;&nbsp;     <button id="Pruef1" onclick="Aufgabe1()">Prüfen</button></p>
+  
+  
+                     <script>
+                        function Aufgabe1() { 
+                                                
+                          if (Eintrag1.value=="691,60") {alert("Richtig"); document.getElementById("Pruef1").disabled= true;
+                          }  
+                           
+                          else if (Eintrag1.value!=="691,60" && Eintrag1.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag1").value="691,60"; window.open('Dreisatz_Aufgabe1neu.html')           
+                          document.getElementById("Pruef1").disabled= true;document.getElementById("Loes1").style.display="inline";}
+                               
+                          else if (Eintrag1.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+<button id="Loes1" style="display:none;">Lösung</button>                      
+</div>
+
+</main>
 
     <pre><b><p class ="Aufgabe" >Aufgabe 1
 
@@ -40,7 +84,7 @@ Wie viel bekommt er für 76 Tage?
                           if (Eintrag1.value=="691,60") {alert("Richtig"); document.getElementById("Pruef1").disabled= true;
                           }  
                            
-                          else if (Eintrag1.value!=="691,60" && Eintrag1.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag1").value="691,60"; window.open('Dreisatz_Aufgabe1neu.html')           
+                          else if (Eintrag1.value!=="691,60" && Eintrag1.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag1").value="691,60"; window.open('Dreisatz_Aufgabe1.html')           
                           document.getElementById("Pruef1").disabled= true;}
                                
                           else if (Eintrag1.value=="") {alert("Bitte eine Eingabe machen")}}
