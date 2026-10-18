@@ -54,7 +54,7 @@ h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
                           if (Eintrag1.value=="691,60") {alert("Richtig"); document.getElementById("Pruef1").disabled= true;
                           }  
                            
-                          else if (Eintrag1.value!=="691,60" && Eintrag1.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag1").value="691,60"; window.open('Dreisatz_Aufgabe1neu.html')           
+                          else if (Eintrag1.value!=="691,60" && Eintrag1.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag1").value="691,60"; window.open('Dreisatz_Aufgabe1.html')           
                           document.getElementById("Pruef1").disabled= true;document.getElementById("Loes1").style.display="inline";}
                                
                           else if (Eintrag1.value=="") {alert("Bitte eine Eingabe machen")}}
@@ -63,9 +63,8 @@ h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
 
 <button id="Loes1" style="display:none;">Lösung</button> 
 
-</div>
 
-<div class="check">
+<!--//Aufgabe 2--> 
 
 <h2>Aufgabe 2</h2>
 <p>Für Waren im Wert von 16 000 € muss der Empfänger 
@@ -73,58 +72,25 @@ h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
 Wie viel Zoll kosten Waren von 7 000 €?</p>
 <button  onclick="window.open('Dreisatz_Aufgabe2.html');" >Lösung</button></p>
 
-</div>
-
-<div class="check">
-
-</main>
-
-    <pre><b><p class ="Aufgabe" >Aufgabe 1
-
-Für 60 Tage Aushilfsarbeit bekommt ein Schüler 546 €. 
-Wie viel bekommt er für 76 Tage?  
-<input type="text" id="Eintrag1" maxlength="6" size="2" style= background-color:yellow > €</input>  <button id="Pruef1" onclick="Aufgabe()">Prüfen</button></p></pre>
-  
-  
-                     <script>
-                        function Aufgabe() { 
-                                                
-                          if (Eintrag1.value=="691,60") {alert("Richtig"); document.getElementById("Pruef1").disabled= true;
-                          }  
-                           
-                          else if (Eintrag1.value!=="691,60" && Eintrag1.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag1").value="691,60"; window.open('Dreisatz_Aufgabe1.html')           
-                          document.getElementById("Pruef1").disabled= true;}
-                               
-                          else if (Eintrag1.value=="") {alert("Bitte eine Eingabe machen")}}
-                         
-                      </script>
-
-<!--//Aufgabe 2-->
-
-<pre><p class="Aufgabe"  >Aufgabe 2
-
-Für Waren im Wert von 16 000 € muss der Empfänger 
-3 200 € Zoll bezahlen. 
-Wie viel Zoll kosten Waren von 7 000 €?  <button  onclick="window.open('Dreisatz_Aufgabe2.html');" >Lösung</button></p></pre>
-
 <!--//Aufgabe 3--> 
 
-<pre><p class ="Aufgabe" >Aufgabe 3
-
-Ein Fuhrpark besteht aus 13 Fahrzeugen, die 
+<h2>Aufgabe 3</h2>
+<p>Ein Fuhrpark besteht aus 13 Fahrzeugen, die 
 monatlich 6 175 l Benzin verbrauchen.    
 Wie hoch ist der monatliche Verbrauch in l, 
-wenn 2 Fahrzeuge dazu kommen?  
-<input type="text" id="Eintrag3" maxlength="4" size="2" style= background-color:yellow > l</input> <button id="Pruef3" onclick="Aufgabe3()">Prüfen</button></p></pre>  
+wenn 2 Fahrzeuge dazu kommen?  </p>
 
+<input type="text" id="Eintrag3" maxlength="4"  style= background-color:yellow > l</input>&nbsp;  <button id="Pruef3" onclick="Aufgabe3()">Prüfen</button></p>
+  
+  
                      <script>
                         function Aufgabe3() { 
                                                 
                           if (Eintrag3.value=="7125") {alert("Richtig"); document.getElementById("Pruef3").disabled= true;
                           }  
                            
-                          else if (Eintrag3.value!=="7125" && Eintrag3.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag3").value="7125";window.open('Dreisatz_Aufgabe3.html')            
-                          document.getElementById("Pruef3").disabled= true;}
+                          else if (Eintrag3.value!=="7125" && Eintrag3.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag3").value="7125"; window.open('Dreisatz_Aufgabe3.html')           
+                          document.getElementById("Pruef1").disabled= true;}
                                
                           else if (Eintrag3.value=="") {alert("Bitte eine Eingabe machen")}}
                          
@@ -133,49 +99,50 @@ wenn 2 Fahrzeuge dazu kommen?
 
    <!--//Aufgabe 4-->
 
-  <pre><p class="Aufgabe"  >Aufgabe 4
+<h2>Aufgabe 4</h2>
+<p>28 Ordner kosten 156,80 €. 
+Wie viel kosten 34 Ordner? </p>
+<button  onclick="window.open('Dreisatz_Aufgabe4.html');" >Lösung</button></p>
 
-28 Ordner kosten 156,80 €. 
-Wie viel kosten 34 Ordner? <button  onclick="window.open('Dreisatz_Aufgabe4.html');" >Lösung</button></p></pre>
 
-      <!--//Aufgabe 5--> 
+      <!--//Aufgabe 5-->
+      
+<h2>Aufgabe 5</h2>
+<p>Ein Großhändler bezieht 805 kg einer Ware für 
+insgesamt 4 830 €. Wie viel kosten 245 kg?    </p>
 
-      <pre><p class ="Aufgabe" >Aufgabe 5
-
-Ein Großhändler bezieht 805 kg einer Ware für 
-insgesamt 4 830 €. Wie viel kosten 245 kg?   
-<input type="text" id="Eintrag5" maxlength="4" size="1" style= background-color:yellow ></input> € <button id="Pruef5" onclick="Aufgabe5()">Prüfen</button></p></pre>
-       
-     <script>
+<input type="text" id="Eintrag5" maxlength="4"  style= background-color:yellow > €</input>&nbsp;  <button id="Pruef1" onclick="Aufgabe5()">Prüfen</button></p>
+  
+  
+                     <script>
                         function Aufgabe5() { 
                                                 
                           if (Eintrag5.value=="1470") {alert("Richtig"); document.getElementById("Pruef5").disabled= true;
                           }  
                            
-                          else if (Eintrag5.value!=="1470" && Eintrag5.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag5").value="1470";window.open('Dreisatz_Aufgabe5.html');            
+                          else if (Eintrag5.value!=="1470" && Eintrag5.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt. "); document.getElementById("Eintrag5").value="71470"; window.open('Dreisatz_Aufgabe5.html')           
                           document.getElementById("Pruef5").disabled= true;}
                                
                           else if (Eintrag5.value=="") {alert("Bitte eine Eingabe machen")}}
                          
-                      </script> 
+                      </script>      
 
-    <!--//Aufgabe 6-->
+          <!--//Aufgabe 6-->
 
-  <pre><p class="Aufgabe" >Aufgabe 6
-
-Ein Vertreter erhält bei einem Umsatz von 109 200 € 
+<h2>Aufgabe 6</h2>
+<p>Ein Vertreter erhält bei einem Umsatz von 109 200 € 
 eine Prämie von 1 146,60 €.   Wie hoch ist seine 
-Prämie, wenn er den Umsatz um 8 400 € steigert?
+Prämie, wenn er den Umsatz um 8 400 € steigert? </p>
 <button  onclick="window.open('Dreisatz_Aufgabe6.html');" >Lösung</button></p></pre>
                     
 <!--//Aufgabe 7--> 
 
-  <pre><p class ="Aufgabe" >Aufgabe 7
-
-Für das Eindecken eines Daches von 408 m<sup>2</sup> braucht 
+ <h2>Aufgabe 7</h2>
+<p>Für das Eindecken eines Daches von 408 m<sup>2</sup> braucht 
 ein Dachdecker 10 200 Platten.Wie viele Platten 
-benötigt er für ein 381 m<sup>2</sup> großes Dach? 
-<input type="text" id="Eintrag7" maxlength="2" size="1" style= background-color:yellow ></input> <button id="Pruef7" onclick="Aufgabe7()">Prüfen</button></p></pre>
+benötigt er für ein 381 m<sup>2</sup> großes Dach?   </p>
+
+<input type="text" id="Eintrag7" maxlength="2" size="1" style= background-color:yellow ></input>&nbsp; <button id="Pruef7" onclick="Aufgabe7()">Prüfen</button></p>
     
 
                     <script>
@@ -193,23 +160,20 @@ benötigt er für ein 381 m<sup>2</sup> großes Dach?
 
 <!--//Aufgabe 8-->   
              
-      <pre><p class="Aufgabe" >Aufgabe 8
-
-Einen Auftrag sollen 24 Arbeiter in 9 Arbeitstagen 
+<h2>Aufgabe 8</h2>
+<p>Einen Auftrag sollen 24 Arbeiter in 9 Arbeitstagen 
 erledigen. Wegen Krankheit fallen 6 Arbeiter aus.   
-In wie viel Tagen ist der Auftrag jetzt erledigt? 
+In wie viel Tagen ist der Auftrag jetzt erledigt?  </p>
 <button  onclick="window.open('Dreisatz_Aufgabe8.html');" >Lösung</button></p></pre>
-
 
  <!--//Aufgabe 9--> 
 
-<pre><p class ="Aufgabe">Aufgabe 9
+ <h2>Aufgabe 9</h2>
+<p>Aus 50 kg Rohkaffee erhält man 43,3 kg Röstkaffee.
+Wie hoch ist der Röstverlust bei einer Tagesproduktion von 22 650 kg Röstkaffee?   </p>
 
-Aus 50 kg Rohkaffee erhält man 43,3 kg Röstkaffee.
-Wie hoch ist der Röstverlust bei einer Tages-
-produktion von 22 650 kg Röstkaffee?
-<input type="text" id="Eintrag9" maxlength="8" size="3" style= background-color:yellow > kg</input> <button id="Pruef9" onclick="Aufgabe9()">Prüfen</button>
-</p></pre>
+<input type="text" id="Eintrag9" maxlength="8" size="3" style= background-color:yellow > kg</input>&nbsp; <button id="Pruef9" onclick="Aufgabe9()">Prüfen</button>
+</p>
 
                     <script>
                         function Aufgabe9() { 
@@ -226,20 +190,20 @@ produktion von 22 650 kg Röstkaffee?
 
         <!--//Aufgabe 10-->   
              
-        <pre><p class="Aufgabe" >Aufgabe 10
-
-Für einen Ballen Kleiderstoff von 32,4 m Länge 
+<h2>Aufgabe 10</h2>
+<p>Für einen Ballen Kleiderstoff von 32,4 m Länge 
 zahlt ein Betrieb 436,80 €.  Wie viel kostet ein
- 2,15 m langer Stoffballen? <button  onclick="window.open('Dreisatz_Aufgabe10.html');" >Lösung</button></p></pre>
+ 2,15 m langer Stoffballen?  </p>
+ <button  onclick="window.open('Dreisatz_Aufgabe10.html');" >Lösung</button></p></pre>
 
         <!--//Aufgabe 11-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 11
-
-Ein Betrieb vermietet Rasenmäher. 
+<h2>Aufgabe 11</h2>
+<p>Ein Betrieb vermietet Rasenmäher. 
 Zwei Tage kosten 15 €.
-Wie viel kosten 3 Tage?   
-<input type="text" id="Eintrag11" maxlength="5" size="2" style= background-color:yellow > €</input> <button id="Pruef11" onclick="Aufgabe11()">Prüfen</button></p></pre>
+Wie viel kosten 3 Tage?   </p>
+
+<input type="text" id="Eintrag11" maxlength="5" size="2" style= background-color:yellow > €</input>&nbsp; <button id="Pruef11" onclick="Aufgabe11()">Prüfen</button></p></pre>
   
                     <script>
                         function Aufgabe11() { 
@@ -255,22 +219,21 @@ Wie viel kosten 3 Tage?
                       
    <!--//Aufgabe 12-->   
              
-        <pre><p class="Aufgabe" >Aufgabe 12
-
-Ein Betrieb muss für 38 421 kWh 5763,15 € 
+<h2>Aufgabe 12</h2>
+<p>Ein Betrieb muss für 38 421 kWh 5763,15 € 
 bezahlen. Wie hoch ist der Kostenanteil des 
 Materiallagers, wenn der alte Zählerstand 
-6 937 kWh, der neue 9 023 kWh beträgt?   
+6 937 kWh, der neue 9 023 kWh beträgt?<p>
 <button  onclick="window.open('Dreisatz_Aufgabe12.html');" >Lösung</button></p></pre>
 
    <!--//Aufgabe 13-->
 
-    <pre><p class ="Aufgabe" >Aufgabe 13
-
-Drei Angestellte machen monatlich 4 320 
+<h2>Aufgabe 13</h2>
+<p>Drei Angestellte machen monatlich 4 320 
 Stichproben. Wie viele Angestellte braucht man für
-17 280 Stichproben pro Monat? 
-<input type="text" id="Eintrag13" maxlength="2" size="1" style= background-color:yellow > </input> <button id="Pruef13" onclick="Aufgabe13()">Prüfen</button></p></pre>
+17 280 Stichproben pro Monat?   </p>
+
+<input type="text" id="Eintrag13" maxlength="2" size="1" style= background-color:yellow > </input>&nbsp; <button id="Pruef13" onclick="Aufgabe13()">Prüfen</button></p></pre>
   
                     <script>
                         function Aufgabe13() { 
@@ -286,20 +249,21 @@ Stichproben. Wie viele Angestellte braucht man für
                       
   <!--//Aufgabe 14-->   
              
-        <pre><p class="Aufgabe" >Aufgabe 14
-
-Die Frachtkosten für eine Ladung von 855 t 
+<h2>Aufgabe 14</h2>
+<p>Die Frachtkosten für eine Ladung von 855 t 
 betragen 63 270 €.Wie hoch sind die Kosten für 
-eine Ladung von 210 t? <button  onclick="window.open('Dreisatz_Aufgabe14.html');" >Lösung</button></p></pre>
+eine Ladung von 210 t?<p>
+
+ <button  onclick="window.open('Dreisatz_Aufgabe14.html');" >Lösung</button></p></pre>
         
   <!--//Aufgabe 15-->
 
-    <pre><p class ="Aufgabe" >Aufgabe 15
-
-14 Abfüllautomaten befüllen 2 100 Flaschen pro 
+<h2>Aufgabe 15</h2>
+<p>14 Abfüllautomaten befüllen 2 100 Flaschen pro 
 Tag. Wie viele Automaten braucht man für 3 000 
-Flaschen pro Tag? 
-<input type="text" id="Eintrag15" maxlength="2" size="1" style= background-color:yellow ></input> <button id="Pruef15" onclick="Aufgabe15()">Prüfen</button></p></pre>
+Flaschen pro Tag?   </p>
+
+<input type="text" id="Eintrag15" maxlength="2" size="1" style= background-color:yellow ></input>&nbsp; <button id="Pruef15" onclick="Aufgabe15()">Prüfen</button></p></pre>
   
 
                     <script>
@@ -316,12 +280,12 @@ Flaschen pro Tag?
                     
   <!--//Aufgabe 16-->   
              
-        <pre><p class="Aufgabe" >Aufgabe 16
-
-Ein Schiff braucht bei einer Geschwindigkeit von 
+<h2>Aufgabe 16</h2>
+<p>Ein Schiff braucht bei einer Geschwindigkeit von 
 17 Knoten für eine Fahrt 10¾ Tage.Wie lange 
 braucht es bei einer Geschwindigkeit von 20 
-Knoten? <button  onclick="window.open('Dreisatz_Aufgabe16.html');" >Lösung</button></p></pre>
+Knoten?<p>
+ <button  onclick="window.open('Dreisatz_Aufgabe16.html');" >Lösung</button></p></pre>
 
 <!--//Aufgabe 17-->
 
